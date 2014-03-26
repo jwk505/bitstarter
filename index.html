@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html  lang="en">
  <head>
    <meta charset="utf-8">
    <title>My first Bitstarter</title>
-   <link type="text/css" rel="stylesheet"
-	 href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
+   <link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
    <style type="text/css">
      body {
        padding-top: 20px;
@@ -16,21 +15,25 @@
      p.lead {
        padding-top: 15px;
      }
-     .navigation, .pitch, . section1, .section2, .faq, .footer {
+     .navigation, .pitch,  .section1, .section2, .faq, .footer {
        padding: 10px 0px 10px 0px;
+     }
+     .video, .thermometer, .order, .social {
+       border: 1px dotted;
+       text-align: center;
      }
      .video {
        /*Internal boarder have 1px width, thus need to add 4 x 1px to 120px. */
        height: 124px;
-       line-heght: 124px;
+       line-height: 124px;
      }
-     .theromometer, .order, .social {
+     .thermometer, .order, .social {
       /*line-height to vertically center: https://phrogz.net/css/vertical-align/index.html */
-       hegith: 40px;
+       height: 40px;
        line-height: 40px;
      }
      div.row {
-       boarder: 1px solid;
+       border: 1px solid;
      }
 
      </style>
@@ -38,23 +41,28 @@
 <body>
   <div class="container">
     <div class="row navigation">
-      <div class = "span2 logo">
+      <div class="span2 logo">
         Logo
       </div>
-      <div class ="span6 blank">
+      <div class="span6 blank">
 	Blank
 	</div>
       <div class="span4 about">
 	About
 	</div>
       </div>
-    <di class="row subheading">
+    <div class="row heading">
       <div class="span12">
-	<p class="lead">this is my first bitstarter project.</p>
+	<h1>Bitstarter Title</h1>
+	</div>
+      </div>
+    <div class="row subheading">
+      <div class="span12">
+	<p class="lead">This is my first bitstarter project.</p>
 	</div>
       </div>
     <div class="row pitch">
-      <div calss="span6 video">
+      <div class="span6 video">
 	Video
 	</div>
       <div class="span6">
@@ -74,8 +82,13 @@
 	Marketing Section 1
 	</div>
       </div>
+    <div class="row section2">
+      <div class="span12">
+	Marketing Section 2
+	</div>
+      </div>
     <div class="row faq">
-      <div=class="span12">
+      <div class="span12">
 	FAQ
 	</div>
     </div>
